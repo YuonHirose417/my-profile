@@ -82,7 +82,7 @@ export default function Home() {
          {/* git hubプロフィールへのボタン */}
           
           <motion.a
-           href="https://crowdworks.jp/public/employees/6310175?ref=login_header"
+           href="https://github.com/YuonHirose417"
            target="_blank"
            rel="noopener noreferrer"
            initial={{ opacity: 0 }}
