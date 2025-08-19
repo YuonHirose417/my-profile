@@ -2,17 +2,18 @@
 
 import { motion } from "framer-motion"
 import { ReactNode } from 'react';
-// react-iconsから必要なアイコンをインポート
-import { FaGithub, FaReact, FaPython, FaNodeJs,FaHtml5, FaCss3Alt, FaJava } from 'react-icons/fa'; // ★ 変更点: FaDockerを削除
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiJavascript, SiAdobepremierepro, SiLinkedin, SiC } from 'react-icons/si'; // ★ 変更点: SiAdobepremiereproに変更
+import Image from 'next/image';
 
-// スキルデータの型定義
+import { FaGithub, FaReact, FaPython, FaNodeJs,FaHtml5, FaCss3Alt, FaJava } from 'react-icons/fa'; 
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiJavascript, SiAdobepremierepro, SiLinkedin, SiC } from 'react-icons/si'; 
+
+
 interface Skill {
   name: string;
   icon: ReactNode;
 }
 
-// スキルデータの配列
+
 const skills: Skill[] = [
   { name: 'C', icon: <SiC size={40} /> },
   { name: 'Python', icon: <FaPython size={40} /> },
@@ -25,13 +26,13 @@ const skills: Skill[] = [
   { name: 'Tailwind CSS', icon: <SiTailwindcss size={40} /> },
   { name: 'HTML', icon: <FaHtml5 size={40} /> },
   { name: 'CSS', icon: <FaCss3Alt size={40} /> },
-  // ★ 変更点: Dockerの項目を削除
-  { name: 'Adobe Premiere Pro', icon: <SiAdobepremierepro size={40} /> }, // ★ 変更点: 正しいアイコンに変更
+  
+  { name: 'Adobe Premiere Pro', icon: <SiAdobepremierepro size={40} /> }, 
 ];
 
 export default function Home() {
   return (
-    // 全体をダークモードに変更
+   
     <div className="bg-gray-900 text-gray-200 font-mono">
       
       {/* ヘッダー */}
@@ -56,7 +57,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <img
+            <Image
               src="/S__324165643.jpg"
               alt="プロフィール画像"
               className="w-48 h-48 rounded-full object-cover border-4 border-gray-700 mx-auto mb-6"
@@ -107,7 +108,7 @@ export default function Home() {
         {/* スキル */}
         <section id="skills" className="py-24 bg-gray-800">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12"><span className="text-green-400">{"//"}//</span> Skills</h2>
+            <h2 className="text-4xl font-bold text-center mb-12"><span className="text-green-400">{"//"}</span> Skills</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {skills.map((skill) => (
                 <motion.div 
@@ -127,7 +128,7 @@ export default function Home() {
         {/* プロジェクト */}
         <section id="projects" className="py-24">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12"><span className="text-green-400">{"//"}//</span> Projects</h2>
+            <h2 className="text-4xl font-bold text-center mb-12"><span className="text-green-400">{"//"}</span> Projects</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Project Card 1 */}
               <div className="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-green-500/20 transition-shadow border border-gray-700">
@@ -159,7 +160,7 @@ export default function Home() {
         {/* お問い合わせ */}
         <section id="contact" className="py-24 bg-gray-800">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold text-center mb-8"><span className="text-green-400">{"//"}//</span> Contact</h2>
+            <h2 className="text-4xl font-bold text-center mb-8"><span className="text-green-400">{"//"}</span> Contact</h2>
             <p className="text-lg text-gray-400 mb-6">
               ご連絡は下記のリンクからお願いいたします。
             </p>
