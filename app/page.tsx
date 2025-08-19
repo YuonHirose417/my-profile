@@ -107,7 +107,7 @@ export default function Home() {
         {/* スキル */}
         <section id="skills" className="py-24 bg-gray-800">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12"><span className="text-green-400">//</span> Skills</h2>
+            <h2 className="text-4xl font-bold text-center mb-12"><span className="text-green-400">{"//"}//</span> Skills</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {skills.map((skill) => (
                 <motion.div 
@@ -127,7 +127,7 @@ export default function Home() {
         {/* プロジェクト */}
         <section id="projects" className="py-24">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12"><span className="text-green-400">//</span> Projects</h2>
+            <h2 className="text-4xl font-bold text-center mb-12"><span className="text-green-400">{"//"}//</span> Projects</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Project Card 1 */}
               <div className="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-green-500/20 transition-shadow border border-gray-700">
@@ -159,7 +159,7 @@ export default function Home() {
         {/* お問い合わせ */}
         <section id="contact" className="py-24 bg-gray-800">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold text-center mb-8"><span className="text-green-400">//</span> Contact</h2>
+            <h2 className="text-4xl font-bold text-center mb-8"><span className="text-green-400">{"//"}//</span> Contact</h2>
             <p className="text-lg text-gray-400 mb-6">
               ご連絡は下記のリンクからお願いいたします。
             </p>
