@@ -170,10 +170,10 @@ export default function Home() {
             </p>
             <div className="flex justify-center space-x-8 mt-10">
               <a
-                href="mailto:hirose@example.com"
+                href="yuon.hirose0417@gmail.com"
                 className="inline-block px-8 py-3 bg-green-500 text-gray-900 font-bold rounded-lg hover:bg-green-400 transition-colors"
               >
-                Email
+                yuon.hirose0417@gmail.com
               </a>
               <a
                 href="https://github.com/YuonHirose417"
