@@ -1,0 +1,9 @@
+# Python 仮想環境
+.venv/
+
+# キャッシュや不要ファイル
+__pycache__/
+*.pyc
+
+# 設定ファイル（鍵が含まれる）
+config.json
