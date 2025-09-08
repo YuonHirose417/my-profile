@@ -106,6 +106,22 @@ export default function Home() {
             >
               <FaGithub size={40} />
             </a>
+             <a
+   　　　　　　 href="https://qiita.com/YuonHirose417"
+    　　　　　　target="_blank"
+    　　　　　　rel="noopener noreferrer"
+    　　　　　　aria-label="Qiita Profile"
+    　　　　　　className="text-gray-400 hover:text-green-400 transition-colors"
+  　　　　　　>
+    　　　　　<Image
+      　　　　　src="/qiita-white-icon.png"
+      　　　　　alt="Qiita"
+      　　　　　width={40}
+      　　　　　height={40}
+      　　　　　className="w-10 h-10 object-contain"
+      　　　　　priority
+    　　　　　　/>
+  　　　　　　　</a>
           </motion.div>
         </section>
 
@@ -129,32 +145,34 @@ export default function Home() {
           </div>
         </section>
 
-        {/* プロジェクト */}
+        {/* プロジェクト */}
         <section id="projects" className="py-24">
-          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center mb-12"><span className="text-green-400"></span> Projects</h2>
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center mb-12">
+              <span className="text-green-400"></span> Personal Project
+            </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Project Card 1 */}
               <div className="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-green-500/20 transition-shadow border border-gray-700">
-                <h3 className="text-2xl font-semibold mb-3 text-green-400">プロジェクト A</h3>
-                <p className="text-gray-400 mb-4">Next.js と Tailwind CSS で作った Web アプリケーションです。</p>
+                <h3 className="text-2xl font-semibold mb-3 text-green-400">Discord Bot</h3>
+                <p className="text-gray-400 mb-4">Ollamaと連携したDiscord Bot。性格設定を読み込み、ユーザーとの会話に応答。</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-1 bg-gray-700 text-sm rounded-md">Next.js</span>
-                  <span className="px-2 py-1 bg-gray-700 text-sm rounded-md">Tailwind CSS</span>
+                  <span className="px-2 py-1 bg-gray-700 text-sm rounded-md">python</span>
+                  <span className="px-2 py-1 bg-gray-700 text-sm rounded-md">ollama</span>
                 </div>
                 <div className="flex space-x-4">
-                  <a href="#" className="text-gray-400 hover:text-green-400"><FaGithub size={24} /></a>
+                  <a href="https://github.com/YuonHirose417/discord-chatbot" className="text-gray-400 hover:text-green-400"><FaGithub size={24} /></a>
                 </div>
               </div>
-              {/* Project Card 2 */}
+              {/* プロジェクト 2 */}
               <div className="p-6 bg-gray-800 rounded-xl shadow-lg hover:shadow-green-500/20 transition-shadow border border-gray-700">
-                <h3 className="text-2xl font-semibold mb-3 text-green-400">プロジェクト B</h3>
-                <p className="text-gray-400 mb-4">Python で構築したバックエンドプロジェクトです。</p>
+                <h3 className="text-2xl font-semibold mb-3 text-green-400">YouTube Downloader</h3>
+                <p className="text-gray-400 mb-4">URLを入力することで動画をダウンロードすることができるウェブアプリ</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-1 bg-gray-700 text-sm rounded-md">Python</span>
                 </div>
                 <div className="flex space-x-4">
-                   <a href="#" className="text-gray-400 hover:text-green-400"><FaGithub size={24} /></a>
+                   <a href="https://github.com/YuonHirose417/youtube-download" className="text-gray-400 hover:text-green-400"><FaGithub size={24} /></a>
                 </div>
               </div>
             </div>
@@ -170,17 +188,12 @@ export default function Home() {
             </p>
             <div className="flex justify-center space-x-8 mt-10">
               <a
-                href="yuon.hirose0417@gmail.com"
+                
                 className="inline-block px-8 py-3 bg-green-500 text-gray-900 font-bold rounded-lg hover:bg-green-400 transition-colors"
               >
                 yuon.hirose0417@gmail.com
               </a>
-              <a
-                href="https://github.com/YuonHirose417"
-                className="inline-block px-8 py-3 bg-gray-700 text-white font-bold rounded-lg hover:bg-gray-600 transition-colors"
-              >
-                GitHub
-              </a>
+              
             </div>
           </div>
         </section>
